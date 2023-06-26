@@ -1,3 +1,7 @@
+@import url("./modules/placeholder-move.css");
+@import url("./modules/skeleton-screen.css");
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 $module-background: #e0e0e0;
@@ -16,7 +20,5 @@ $module-background: #e0e0e0;
 .module {
   width: 800px;
   height: 300px;
+  border: 1px solid gray;
 }
-
-@import "./modules/placeholder-move.scss";
-@import "./modules/skeleton-screen.scss";
