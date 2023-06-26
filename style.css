@@ -8,12 +8,13 @@
 
 .modules {
   display: flex;
+  justify-content: center;
   gap: 20px 20px;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 .module {
-  width: 800px;
+  width: 600px;
   height: 300px;
   border: 1px solid gray;
 }/*# sourceMappingURL=style.css.map */
