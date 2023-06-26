@@ -8,10 +8,13 @@
     position: relative;
     width: 80%;
     height: 70%;
+    padding: 30px 20px;
     border-radius: 1rem;
     background-color: white;
     // filter: drop-shadow(2px 4px 2px gray);
     border: 3px solid gray;
+    color: rgb(95, 95, 95);
+    line-height: 24px;
   }
 
   .balloon::before,
