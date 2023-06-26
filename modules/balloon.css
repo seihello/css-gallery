@@ -1,0 +1,29 @@
+.balloon-module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balloon-module .balloon {
+  position: relative;
+  width: 80%;
+  height: 70%;
+  border-radius: 1rem;
+  background-color: white;
+  border: 3px solid gray;
+}
+.balloon-module .balloon::before,
+.balloon-module .balloon::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 10%;
+  background-color: gray;
+  position: absolute;
+  inset: 100% auto auto 70%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.balloon-module .balloon::after {
+  background-color: white;
+  translate: 0 -4px;
+}/*# sourceMappingURL=balloon.css.map */
