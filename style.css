@@ -15,21 +15,21 @@
   height: 300px;
 }
 
-.input-wrapper {
+.placeholder-move .input-wrapper {
   height: 100%;
   display: flex;
   align-items: center;
   position: relative;
   padding: 1rem 0.5rem;
 }
-.input-wrapper input {
+.placeholder-move .input-wrapper input {
   height: 3rem;
   width: 70%;
   border-radius: 10px;
   border: 1px solid gray;
   padding-left: 1rem;
 }
-.input-wrapper span {
+.placeholder-move .input-wrapper span {
   font-size: 1rem;
   position: absolute;
   inset: 50% auto auto 4%;
@@ -40,14 +40,14 @@
   pointer-events: none;
   background: none;
 }
-.input-wrapper input:not(:-moz-placeholder-shown) + span {
+.placeholder-move .input-wrapper input:not(:-moz-placeholder-shown) + span {
   font-size: 0.9rem;
   inset: 42% auto auto 3%;
   padding: 0 0.5em;
   background-color: white;
 }
-.input-wrapper input:focus + span,
-.input-wrapper input:not(:placeholder-shown) + span {
+.placeholder-move .input-wrapper input:focus + span,
+.placeholder-move .input-wrapper input:not(:placeholder-shown) + span {
   font-size: 0.9rem;
   inset: 42% auto auto 3%;
   padding: 0 0.5em;
