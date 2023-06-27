@@ -1,0 +1,27 @@
+.rotate-gradient {
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+  div {
+    position: absolute;
+    top: -70%;
+    left: -70%;
+    width: 240%;
+    height: 240%;
+    background: linear-gradient(0deg, rgba(58,78,180,1) 0%, rgb(98, 255, 231) 100%);
+    animation: rotate-background 5s linear 0s infinite;
+  }
+
+  p {
+    z-index: 10;
+    color: white;
+    font-size: 2rem;
+  }
+
+  @keyframes rotate-background {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+}

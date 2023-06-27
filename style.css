@@ -3,6 +3,7 @@
 @import url("./modules/balloon.css");
 @import url("./modules/opening-button.css");
 @import url("./modules/cuboid.css");
+@import url("./modules/rotate-gradient.css");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
   box-sizing: border-box;
