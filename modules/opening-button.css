@@ -14,7 +14,7 @@
   cursor: pointer;
   padding: 0;
   margin: 0;
-  box-shadow: 2px 2px 2px gray;
+  box-shadow: 3px 3px 0px rgb(255, 234, 129);
   border: none;
 }
 .opening-button button div {
@@ -48,5 +48,5 @@
 }
 .opening-button button:active {
   box-shadow: none;
-  transform: translate(2px, 2px);
+  transform: translate(3px, 3px);
 }/*# sourceMappingURL=opening-button.css.map */
