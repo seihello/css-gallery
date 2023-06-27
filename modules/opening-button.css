@@ -6,29 +6,47 @@
 .opening-button button {
   height: 3rem;
   width: 200px;
-  background-color: aquamarine;
+  background-color: rgb(255, 247, 205);
   border-radius: 5px;
   display: block;
   position: relative;
-  perspective: 100vmax;
+  perspective: 1200px;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+  box-shadow: 2px 2px 2px gray;
+  border: none;
 }
-.opening-button button::before {
+.opening-button button div {
+  box-sizing: content-box;
   content: "HOVER HERE";
-  display: grid;
-  place-items: center;
-  background-color: rgb(167, 255, 52);
-  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 188, 0);
   border-radius: 5px;
   width: 100%;
-  height: 100%;
+  height: 102%;
   position: absolute;
-  inset: -2px auto auto -2px;
-  transition: transform 1s;
+  inset: 0 auto auto 0;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
   transform: translate3d(0, 0, 4px);
   transform-origin: 0 0;
+  z-index: 30;
 }
-.opening-button button:hover::before {
+.opening-button button img {
+  position: absolute;
+  width: 55px;
+  height: auto;
+  inset: 72% auto auto 75%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+.opening-button button:hover div {
   transform: rotate3d(1, 0, 0, 135deg);
+}
+.opening-button button:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }/*# sourceMappingURL=opening-button.css.map */
