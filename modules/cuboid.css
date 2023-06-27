@@ -1,46 +1,62 @@
 .cuboid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuboid .cuboid-box {
   position: relative;
   perspective: 1000px;
-}
-.cuboid div {
-  border: 5px solid gray;
-  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate-cuboid 8s infinite;
+  animation-timing-function: linear;
   width: 180px;
   height: 180px;
+  transform-origin: 0 0 90px;
+}
+.cuboid .cuboid-box div {
+  border: 5px solid gray;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
 }
-.cuboid .bottom {
+.cuboid .cuboid-box .bottom {
   background-color: rgba(255, 61, 61, 0.4);
   z-index: 90;
   transform: translate(-50%, -50%) rotateX(-90deg);
   transform-origin: 100% 100%;
 }
-.cuboid .top {
+.cuboid .cuboid-box .top {
   background-color: rgba(255, 128, 0, 0.4);
   z-index: 90;
   transform: translate(-50%, -50%) rotateX(90deg);
   transform-origin: 0 0;
 }
-.cuboid .front {
-  background-color: rgba(33, 115, 255, 0.4);
+.cuboid .cuboid-box .front {
+  background-color: rgba(34, 107, 233, 0.4);
   z-index: 100;
   transform: translate(-50%, -50%) translateZ(180px);
   transform-origin: 0 0;
 }
-.cuboid .back {
+.cuboid .cuboid-box .back {
   background-color: rgba(215, 70, 255, 0.8);
 }
-.cuboid .left {
+.cuboid .cuboid-box .left {
   background-color: rgba(255, 233, 67, 0.8);
   z-index: 90;
   transform: translate(-50%, -50%) rotateY(-90deg);
   transform-origin: 0 0;
 }
-.cuboid .right {
+.cuboid .cuboid-box .right {
   background-color: rgba(152, 255, 112, 0.8);
   z-index: 90;
   transform: translate(-50%, -50%) rotateY(90deg);
   transform-origin: 100% 0;
+}
+@keyframes rotate-cuboid {
+  to {
+    transform: rotateY(360deg);
+  }
 }/*# sourceMappingURL=cuboid.css.map */
