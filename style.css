@@ -15,8 +15,13 @@ header {
   height: 200px;
   display: grid;
   place-items: center;
-  font-size: 68px;
-  color: rgb(141, 94, 0);
+}
+header h1 {
+  margin: 0;
+  font-size: 82px;
+  background: linear-gradient(60deg, rgb(122, 55, 0), rgb(206, 10, 10));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .modules {
