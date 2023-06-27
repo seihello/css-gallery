@@ -42,6 +42,7 @@
   inset: 72% auto auto 75%;
   transform: translate(-50%, -50%);
   z-index: 20;
+  filter: drop-shadow(3px 1px 2px #aaa);
 }
 .opening-button button:hover div {
   transform: rotate3d(1, 0, 0, 135deg);
