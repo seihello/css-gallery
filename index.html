@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>CSS Gallery</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-        <script type="module" src="main.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Gallery</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="main.js"></script>
+</head>
 
-    <body>
-        <header>
-            <h1>CSS Gallery</h1>
-        </header>
+<body>
+    <header>
+        <h1>CSS Gallery</h1>
+    </header>
 
-        <main>
-            <div class="modules">
-                <div class="module placeholder-move">
-                    <div class="input-wrapper">
-                        <input type="email" placeholder=" ">
-                        <span>Email</span>
-                    </div>
-                </div>
-
-                <div class="module skeleton-screen">
-                    <div class="target"></div>
-                    <div class="target"></div>
-                    <div class="target"></div>
-                </div>
-
-                <div class="module balloon-module">
-                    <div class="balloon">
-                        Unravel the secrets of the universe through the lens of physics. Dive into the quantum realm, where particles dance with uncertainty. Harness the power of relativity, bending the fabric of spacetime. Let curiosity propel you on a journey of discovery, where the laws of nature reveal their majestic elegance.
-                    </div>
-                </div>
-
-                <div class="module opening-button">
-                    <button>
-                        CLICK!
-                        <div>HOVER HERE</div>
-                        <img src="./img/cat.png">
-                    </button>
-                </div>
-
-                <div class="module cuboid">
-                    <div class="cuboid-box">
-                        <div class="top"></div>
-                        <div class="bottom"></div>
-                        <div class="front"></div>
-                        <div class="back"></div>
-                        <div class="left"></div>
-                        <div class="right"></div>
-                    </div>
-                </div>
-
-                <div class="module rotate-gradient">
-                    <div></div>
-                    <p>HAVE A NICE DAY</p>
+    <main>
+        <div class="modules">
+            <div class="module placeholder-move">
+                <div class="input-wrapper">
+                    <input type="email" placeholder=" ">
+                    <span>Email</span>
                 </div>
             </div>
-        </main>
 
-        <footer>
-            <div class="footer">
-                <div class="allrights">© Seisuke Yamada All rights reserved.</div>
+            <div class="module skeleton-screen">
+                <div class="target"></div>
+                <div class="target"></div>
+                <div class="target"></div>
             </div>
-        </footer>
-    </body>
+
+            <div class="module balloon-module">
+                <div class="balloon">
+                    Unravel the secrets of the universe through the lens of physics. Dive into the quantum realm, where
+                    particles dance with uncertainty. Harness the power of relativity, bending the fabric of spacetime.
+                    Let curiosity propel you on a journey of discovery, where the laws of nature reveal their majestic
+                    elegance.
+                </div>
+            </div>
+
+            <div class="module opening-button">
+                <button>
+                    CLICK!
+                    <div>HOVER HERE</div>
+                    <img src="./img/cat.png">
+                </button>
+            </div>
+
+            <div class="module cuboid">
+                <div class="cuboid-box">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                    <div class="front"></div>
+                    <div class="back"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+
+            <div class="module rotate-gradient">
+                <div></div>
+                <p>HAVE A NICE DAY</p>
+            </div>
+
+            <div class="module slogan-animation">
+                <div class="title">Hi, I'm Seisuke</div>
+                <div class="slogans">
+                    <p class="slogan">Web<br>Developer</p>
+                    <p class="slogan">Living<br>in<br>Vancouver</p>
+                    <p class="slogan">Have<br>A Nice<br>Day</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="allrights">© Seisuke Yamada All rights reserved.</div>
+        </div>
+    </footer>
+</body>
 
 </html>
