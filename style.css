@@ -6,7 +6,7 @@
 @import url("./modules/rotate-gradient.css");
 @import url("./modules/slogan-animation.css");
 @import url("./modules/expand-info.css");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 * {
   box-sizing: border-box !important;
   font-family: "Lexend Deca", sans-serif;
