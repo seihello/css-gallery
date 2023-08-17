@@ -1,0 +1,60 @@
+.expand-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expand-info .info-item {
+  height: 85%;
+  width: 80%;
+  background-color: #ffe4cd;
+  border-radius: 20px;
+  transition: height 0.5s;
+  position: relative;
+}
+.expand-info .info-item img {
+  width: auto;
+  height: 70%;
+  position: absolute;
+  inset: 20px auto auto 50%;
+  transform: translate(-50%, 0%);
+  transition: all 0.5s;
+  box-shadow: 3px 3px 8px rgb(75, 75, 75);
+}
+.expand-info .info-item div {
+  position: absolute;
+  inset: 200px auto auto 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s;
+}
+.expand-info .info-item div p {
+  text-align: center;
+}
+.expand-info .info-item div p,
+.expand-info .info-item div button {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.expand-info .info-item:hover {
+  height: 150%;
+  transition: all 0.5s;
+}
+.expand-info .info-item:hover img {
+  height: 60%;
+  inset: 0 auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+.expand-info .info-item:hover div {
+  inset: 180px auto auto 50%;
+  transform: translate(-50%, 0%);
+  transition: all 0.5s;
+}
+.expand-info .info-item:hover div p,
+.expand-info .info-item:hover div button {
+  opacity: 1;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}/*# sourceMappingURL=expand-info.css.map */

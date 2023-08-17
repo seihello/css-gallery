@@ -5,9 +5,10 @@
 @import url("./modules/cuboid.css");
 @import url("./modules/rotate-gradient.css");
 @import url("./modules/slogan-animation.css");
+@import url("./modules/expand-info.css");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -41,7 +42,7 @@ header h1 {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 300px;
 }
 footer .allrights {
   text-align: center;
